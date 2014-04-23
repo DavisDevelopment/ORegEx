@@ -47,18 +47,18 @@ was matched by `this` ORegEx.
 # Examples #
 Here's a simple example of ORegEx at work in NodeJS.
 `
-var oregex = require("oregex");
+	var oregex = require("oregex");
 
-var obj = {
-	"name" : "Ryan Davis",
-	"age" : 18,
-	"hobbies" : ["programming", "gaming", "..programming"],
-	"exhausted" : true
-};
-var selector1 = oregex.compile("[name .= 'String'] [name = 'Ryan Davis'] [age .= Int] [age = 18] [hobbies .= 'Array'] :exhausted");
-var selector2 = oregex.compile("[name .= 'String'] [name != 'Ryan Davis'] [age .= Int] [age != 18] [hobbies .= 'Array'] :exhausted");
+	var obj = {
+		"name" : "Ryan Davis",
+		"age" : 18,
+		"hobbies" : ["programming", "gaming", "..programming"],
+		"exhausted" : true
+	};
+	var selector1 = oregex.compile("[name .= 'String'] [name = 'Ryan Davis'] [age .= Int] [age = 18] [hobbies .= 'Array'] :exhausted");
+	var selector2 = oregex.compile("[name .= 'String'] [name != 'Ryan Davis'] [age .= Int] [age != 18] [hobbies .= 'Array'] :exhausted");
 
-selector1.test( obj ) //=> 'true'
-selector2.test( obj ) //=> 'false'
+	selector1.test( obj ); //=> 'true'
+	selector2.test( obj ); //=> 'false'
 `
 You can also find several much more extensive examples in the 'examples' folder.
