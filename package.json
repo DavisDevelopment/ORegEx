@@ -1,0 +1,17 @@
+{
+	"name" : "oregex",
+	"description" : "Regular Expression Grammar for Objects instead of Strings",
+	"version" : "1.0.1",
+	"author" : "Ryan Davis",
+	"contributors" : [
+		{
+			"name" : "Ryan Davis",
+			"email" : "epikit@gmail.com"
+		}
+	],
+	"keywords" : ["oregex", "regex", "object", "regular", "expression", "grammar", "selector"],
+	"main" : "./dist/oregex.js",
+	"dependencies" : {
+		
+	}
+}
