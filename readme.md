@@ -46,7 +46,7 @@ was matched by `this` ORegEx.
 
 # Examples #
 Here's a simple example of ORegEx at work in NodeJS.
-`
+
 	var oregex = require("oregex");
 
 	var obj = {
@@ -60,5 +60,5 @@ Here's a simple example of ORegEx at work in NodeJS.
 
 	selector1.test( obj ); //=> 'true'
 	selector2.test( obj ); //=> 'false'
-`
+
 You can also find several much more extensive examples in the 'examples' folder.
